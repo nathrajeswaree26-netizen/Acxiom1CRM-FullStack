@@ -1,0 +1,30 @@
+
+.reports-page { display: flex; flex-direction: column; gap: 20px; }
+.reports-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.reports-heading h2 { margin: 0; font-size: 23px; }
+.reports-heading p { margin: 6px 0 0; color: #8791a6; font-size: 13px; }
+.reports-primary, .reports-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 13px; border-radius: 8px; font-size: 12px; font-weight: 600; }
+.reports-primary { border: 1px solid #5369e9; background: #5369e9; color: white; }
+.reports-secondary { border: 1px solid #e0e5ef; background: white; color: #44516a; }
+.reports-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
+.reports-cards > div { min-width: 0; padding: 18px; border: 1px solid #e8ecf4; border-radius: 11px; background: white; }
+.reports-cards span, .reports-cards strong { display: block; }
+.reports-cards span { color: #8791a6; font-size: 12px; }
+.reports-cards strong { margin-top: 9px; color: #192641; font-size: 26px; }
+.reports-panel { overflow: hidden; border: 1px solid #e8ecf4; border-radius: 12px; background: white; }
+.reports-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 12px; padding: 18px; border-bottom: 1px solid #eff1f6; }
+.reports-toolbar label { display: flex; flex-direction: column; gap: 7px; color: #526078; font-size: 12px; }
+.reports-toolbar select { min-width: 200px; padding: 10px; border: 1px solid #dfe5ef; border-radius: 8px; background: white; font-size: 12px; }
+.reports-table-wrap { overflow-x: auto; }
+.reports-table { min-width: 650px; text-align: left; }
+.reports-table th { padding: 14px; background: #f8f9fc; color: #7e899f; font-size: 11px; }
+.reports-table td { padding: 14px; border-top: 1px solid #eff1f6; color: #59667d; font-size: 12px; }
+.reports-empty { padding: 28px !important; text-align: center; }
+.reports-footnote { margin: 0; padding: 14px 18px; border-top: 1px solid #eff1f6; color: #8791a6; font-size: 11px; }
+.reports-error { padding: 10px; border-radius: 8px; background: #fff0f0; color: #bd3838; font-size: 12px; }
+@media (max-width: 700px) {
+  .reports-heading { align-items: flex-start; flex-direction: column; }
+  .reports-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reports-toolbar { align-items: stretch; flex-direction: column; }
+  .reports-toolbar select { min-width: 0; width: 100%; }
+}

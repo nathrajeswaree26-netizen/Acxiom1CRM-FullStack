@@ -1,0 +1,117 @@
+
+.crm-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  height: 100dvh;
+  padding: 24px 16px 16px;
+  overflow-y: auto;
+  background: #111c35;
+  color: #e7ecf8;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 5px 30px;
+}
+
+.brand-logo {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #6478f5;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.brand-text strong, .brand-text small {
+  display: block;
+}
+
+.brand-text strong { color: #fff; font-size: 18px; }
+.brand-text small { margin-top: 4px; color: #aab6d0; font-size: 11px; }
+
+.sidebar-heading {
+  margin: 0 10px 12px;
+  color: #8998b8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 45px;
+  padding: 0 13px;
+  border-radius: 9px;
+  color: #bac5dc;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+
+.sidebar-link:hover { background: #202d4b; color: white; }
+.sidebar-link.active { background: #5369e9; color: white; font-weight: 600; }
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding: 22px 10px 6px;
+  color: #aab6d0;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #45d5a1;
+}
+
+.sidebar-close, .sidebar-overlay { display: none; }
+
+@media (max-width: 768px) {
+  .crm-sidebar {
+    transform: translateX(-100%);
+    transition: transform .25s ease;
+  }
+
+  .crm-sidebar.sidebar-open { transform: translateX(0); }
+
+  .sidebar-close {
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: white;
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    border: 0;
+    background: rgb(12 20 38 / 55%);
+  }
+}

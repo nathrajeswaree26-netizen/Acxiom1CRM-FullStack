@@ -1,0 +1,48 @@
+
+.customers-page { display: flex; flex-direction: column; gap: 20px; }
+.customers-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.customers-heading h2 { margin: 0; font-size: 23px; color: #192641; }
+.customers-heading p { margin: 6px 0 0; color: #8791a6; font-size: 13px; }
+.crm-primary-btn, .crm-secondary-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; }
+.crm-primary-btn { border: 1px solid #5369e9; background: #5369e9; color: white; }
+.crm-primary-btn:hover { background: #4155d0; }
+.crm-secondary-btn { border: 1px solid #e0e5ef; background: white; color: #44516a; }
+.crm-secondary-btn:hover { background: #f5f7fc; }
+.customer-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+.customer-stats > div { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; border: 1px solid #e8ecf4; border-radius: 12px; background: white; }
+.customer-stats span { color: #8791a6; font-size: 12px; }
+.customer-stats strong { color: #192641; font-size: 27px; }
+.customer-toolbar { display: flex; gap: 10px; }
+.customer-search { display: flex; flex: 1; align-items: center; gap: 9px; padding: 0 13px; border: 1px solid #e3e8f1; border-radius: 9px; background: white; color: #8791a6; }
+.customer-search input { width: 100%; min-width: 0; padding: 12px 0; border: 0; outline: 0; background: transparent; font-size: 12px; }
+.customer-table-card { overflow: hidden; border: 1px solid #e8ecf4; border-radius: 12px; background: white; }
+.customer-table-wrap { overflow-x: auto; }
+.customer-table { min-width: 800px; text-align: left; }
+.customer-table th { padding: 14px 16px; background: #f8f9fc; color: #7e899f; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.customer-table td { padding: 15px 16px; border-top: 1px solid #eff1f6; color: #59667d; font-size: 12px; }
+.customer-table td strong { color: #293650; }
+.customer-actions { display: flex; gap: 7px; }
+.customer-actions button, .modal-close { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #e5e9f1; border-radius: 7px; background: white; color: #63718a; }
+.customer-actions button:hover { background: #eef1ff; color: #5369e9; }
+.customer-actions .delete-action:hover { background: #fff0f0; color: #d94747; }
+.customer-empty { padding: 32px !important; text-align: center; color: #8791a6 !important; }
+.customer-table-footer { padding: 13px 16px; border-top: 1px solid #eff1f6; color: #8791a6; font-size: 11px; }
+.crm-error { padding: 10px 12px; border-radius: 7px; background: #fff0f0; color: #bd3838; font-size: 12px; }
+.crm-modal-backdrop { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; overflow-y: auto; padding: 20px; background: rgb(17 28 53 / 55%); }
+.crm-modal { width: min(100%, 620px); max-height: calc(100dvh - 40px); overflow-y: auto; padding: 24px; border-radius: 15px; background: white; box-shadow: 0 20px 60px rgb(0 0 0 / 15%); }
+.crm-modal-heading { display: flex; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
+.crm-modal-heading h3 { margin: 0; color: #192641; font-size: 20px; }
+.crm-modal-heading p { margin: 6px 0 0; color: #8791a6; font-size: 12px; }
+.customer-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.customer-form-grid label { display: flex; flex-direction: column; gap: 7px; color: #526078; font-size: 12px; font-weight: 600; }
+.customer-form-grid input, .customer-form-grid textarea { width: 100%; padding: 11px; border: 1px solid #dfe5ef; border-radius: 8px; outline-color: #6478f5; font-size: 13px; font-weight: 400; }
+.customer-address-field { grid-column: 1 / -1; }
+.crm-modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; }
+@media (max-width: 600px) {
+  .customers-heading { align-items: flex-start; flex-direction: column; }
+  .customer-toolbar { flex-direction: column; }
+  .customer-search { min-height: 43px; }
+  .customer-form-grid { grid-template-columns: 1fr; }
+  .customer-address-field { grid-column: auto; }
+  .crm-modal { padding: 18px; }
+}

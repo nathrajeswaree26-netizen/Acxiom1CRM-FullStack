@@ -1,0 +1,28 @@
+
+.audit-page { display: flex; flex-direction: column; gap: 20px; }
+.audit-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.audit-heading h2 { margin: 0; font-size: 23px; }
+.audit-heading p { margin: 6px 0 0; color: #8791a6; font-size: 13px; }
+.audit-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 13px; border: 1px solid #e0e5ef; border-radius: 8px; background: white; color: #44516a; font-size: 12px; font-weight: 600; }
+.audit-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.audit-summary > div { padding: 18px; border: 1px solid #e8ecf4; border-radius: 11px; background: white; }
+.audit-summary span, .audit-summary strong { display: block; }
+.audit-summary span { color: #8791a6; font-size: 12px; }
+.audit-summary strong { margin-top: 8px; color: #192641; font-size: 25px; }
+.audit-toolbar { display: flex; gap: 10px; }
+.audit-toolbar label { display: flex; align-items: center; flex: 1; gap: 8px; padding-left: 12px; border: 1px solid #e3e8f1; border-radius: 8px; background: white; color: #8791a6; }
+.audit-toolbar input { width: 100%; min-width: 0; padding: 12px 0; border: 0; outline: 0; font-size: 12px; }
+.audit-toolbar select { min-width: 150px; padding: 10px; border: 1px solid #e0e5ef; border-radius: 8px; background: white; font-size: 12px; }
+.audit-table-wrap { overflow-x: auto; border: 1px solid #e8ecf4; border-radius: 12px; background: white; }
+.audit-table { min-width: 900px; text-align: left; }
+.audit-table th { padding: 14px; background: #f8f9fc; color: #7e899f; font-size: 11px; white-space: nowrap; }
+.audit-table td { padding: 14px; border-top: 1px solid #eff1f6; color: #59667d; font-size: 12px; }
+.audit-action { display: inline-block; padding: 5px 8px; border-radius: 6px; background: #eef1ff; color: #5369e9; font-size: 11px; }
+.audit-empty { padding: 30px !important; text-align: center; }
+.audit-error { padding: 10px; border-radius: 8px; background: #fff0f0; color: #bd3838; font-size: 12px; }
+@media (max-width: 600px) {
+  .audit-heading { align-items: flex-start; flex-direction: column; }
+  .audit-toolbar { flex-direction: column; }
+  .audit-toolbar label { min-height: 40px; }
+  .audit-toolbar select { width: 100%; }
+}

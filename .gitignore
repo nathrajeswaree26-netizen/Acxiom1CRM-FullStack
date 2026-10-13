@@ -1,0 +1,16 @@
+# Node and frontend
+**/node_modules/
+**/dist/
+
+# Java and Maven
+**/target/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# IDE and logs
+.vscode/
+.idea/
+*.log

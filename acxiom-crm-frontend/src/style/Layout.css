@@ -1,0 +1,22 @@
+
+.crm-main {
+  min-height: 100vh;
+  margin-left: 255px;
+  background: #f5f7fc;
+}
+
+.crm-content {
+  width: 100%;
+  max-width: 1600px;
+  min-height: calc(100vh - 86px);
+  margin: 0 auto;
+  padding: 28px 30px;
+}
+
+@media (max-width: 768px) {
+  .crm-main { margin-left: 0; }
+  .crm-content {
+    min-height: calc(100vh - 75px);
+    padding: 20px 15px;
+  }
+}
