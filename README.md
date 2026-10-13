@@ -164,9 +164,8 @@ The objective of Acxiom CRM is to provide a centralized platform for managing cu
 ## 👩‍💻 Author
 
 **Rajeswaree Nath**
-
 - GitHub: [@nathrajeswaree26-netizen](https://github.com/nathrajeswaree26-netizen)
-- LinkedIn: [Rajeswaree Nath](https://linkedin.com/in/rajeswaree-nath)
+- LinkedIn: [https://www.linkedin.com/in/nathrajeswaree](https://www.linkedin.com/in/nathrajeswaree)
 
 ## 📄 License
 
