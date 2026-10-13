@@ -40,6 +40,7 @@ A full-stack Customer Relationship Management (CRM) application built with React
 
 ## 📁 Project Structure
 
+```text
 Acxiom1CRM-FullStack/
 │
 ├── acxiom-crm-backend/
@@ -70,6 +71,7 @@ Acxiom1CRM-FullStack/
     │   └── main.jsx
     ├── package.json
     └── vite.config.js
+```
 
 ## ⚙️ Prerequisites
 
@@ -83,33 +85,47 @@ Install the following before running the application:
 ## 💻 Installation and Setup
 
 ### 1. Clone the Repository
+
+```bash
 git clone https://github.com/nathrajeswaree26-netizen/Acxiom1CRM-FullStack.git
 cd Acxiom1CRM-FullStack
+```
 
 ### 2. Configure MySQL
+
 Start MySQL and create the database:
+
+```sql
 CREATE DATABASE acxiom_crm;
+```
+
 Configure the database connection in:
-acxiom-crm-backend/src/main/resources/application.properties
+
+`acxiom-crm-backend/src/main/resources/application.properties`
 
 ### 3. Run the Backend
+
 Open a terminal in the backend directory:
+
+```bash
 cd acxiom-crm-backend
+```
 
 On Windows CMD, run:
+
+```cmd
 mvnw.cmd spring-boot:run
-The backend is configured to run at:
-http://localhost:8080
+```
 
 ### 4. Run the Frontend
 
 Open a second terminal in the project root and run:
+
+```bash
 cd acxiom-crm-frontend
 npm install
 npm run dev
-
-Open the local URL printed by Vite, usually:
-http://localhost:5173
+```
 
 ## 🔗 Backend API Modules
 
